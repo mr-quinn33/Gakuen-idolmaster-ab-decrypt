@@ -13,7 +13,7 @@ import resource.export
 
 def main():
     octodb = decrypt.octodb.decryptOctoDB(
-        "./octo/pdb/400/205000/octocacheevai")
+        "./octo/pdb/400/705000/octocacheevai")
 
     try:
         # 解密AssetBundle
@@ -21,7 +21,7 @@ def main():
             "./octo", "./output/asset_bundle", octodb)
 
         # 导出资源文件
-        resource.export.exportFiles("./octo", "./output/resource", octodb)
+        # resource.export.exportFiles("./octo", "./output/resource", octodb)
     except Exception as e:
         print(e)
         return

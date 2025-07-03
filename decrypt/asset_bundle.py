@@ -94,7 +94,7 @@ def decryptToFile(filesPath: str, outputPath: str, octodb: decrypt.octodb_pb2.Da
         for fileName in fileNames:
             filePath = os.path.join(dirPath, fileName)
             # 检查文件是否存在于nameMap中
-            if fileName in nameMap:
+            if fileName in nameMap and nameMap[fileName].startswith('mdl_chr_', 0, 8):
                 outputFilePath = os.path.join(outputPath, nameMap[fileName])
 
                 with open(filePath, "rb") as f:

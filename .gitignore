@@ -6,3 +6,12 @@ build/
 
 octo/
 output/
+
+gakumas_Data/
+VC_redist/
+
+baselib.dll
+gakumas.exe*
+GameAssembly.dll
+UnityCrashHandler64.exe
+UnityPlayer.dll
